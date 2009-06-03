@@ -1,0 +1,9 @@
+lib/JSON/Streaming/Reader.pm
+lib/JSON/Streaming/Reader/TestUtil.pm
+t/03-callbackapi.t
+t/02-errors.t
+t/00-use.t
+t/01-basics.t
+Makefile.PL
+MANIFEST
+META.yml                                 Module meta-data (added by MakeMaker)
