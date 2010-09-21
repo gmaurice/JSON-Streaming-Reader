@@ -593,7 +593,8 @@ sub _get_string_token {
             }
             elsif ($escape_char eq 'u') {
                 # TODO: Support this
-                die "\\u sequence not yet supported\n";
+            	$accum .= '\u';
+            #    die "\\u sequence not yet supported\n";
             }
             else {
                 die "Invalid escape sequence \\$escape_char\n";
@@ -637,7 +638,8 @@ sub _parse_string {
             }
             elsif ($escape_char eq 'u') {
                 # TODO: Support this
-                die "\\u sequence not yet supported\n";
+            	$accum .= '\u' if $want_result;
+               # die "\\u sequence not yet supported\n";
             }
             else {
                 die "Invalid escape sequence \\$escape_char";
